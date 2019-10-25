@@ -25,5 +25,11 @@ export default {
     // https://github.com/thgh/rollup-plugin-serve
     serve({ contentBase: "build", open: true, host: "0.0.0.0", port: 4000 }),
     livereload("build")
-  ]
+  ],
+  watch: {
+    clearScreen: true,
+    chokidar: {
+      usePolling: true
+    }
+  }
 };
